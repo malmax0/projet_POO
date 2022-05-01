@@ -1,0 +1,83 @@
+  POOv2.ClientEdit.resources - Embedded, ContainedInManifestFile, 
+  POOv2.ClientShow.resources - Embedded, ContainedInManifestFile, 
+  POOv2.CommandeEdit.resources - Embedded, ContainedInManifestFile, 
+  POOv2.CommandShow.resources - Embedded, ContainedInManifestFile, 
+  POOv2.DomainePP.resources - Embedded, ContainedInManifestFile, 
+  POOv2.login.resources - Embedded, ContainedInManifestFile, 
+  POOv2.PersonnelEdit.resources - Embedded, ContainedInManifestFile, 
+  POOv2.PersonnelShow.resources - Embedded, ContainedInManifestFile, 
+  POOv2.StatCA.resources - Embedded, ContainedInManifestFile, 
+  POOv2.StatSales.resources - Embedded, ContainedInManifestFile, 
+  POOv2.StatShow.resources - Embedded, ContainedInManifestFile, 
+  POOv2.StatValue.resources - Embedded, ContainedInManifestFile, 
+  POOv2.StockShow.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly POOv2, Version=0.0.*, Culture=Langue indifférente (Pays indifférent): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class POOv2.ClientEdit: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class POOv2.Show: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class POOv2.ClientShow: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :POOv2.Show
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class POOv2.CommandeEdit: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class POOv2.CommandShow: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :POOv2.Show
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class POOv2.login: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    seti(Int32*): PrivateScope, Public, HideBySig
+    geti(): PrivateScope, Public, HideBySig
+Class POOv2.DomainePP: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    setselect(String*): PrivateScope, Public, HideBySig
+    setstop(Int32*): PrivateScope, Public, HideBySig
+    setaction(String*): PrivateScope, Public, HideBySig
+Class POOv2.PersonnelEdit: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class POOv2.PersonnelShow: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :POOv2.Show
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class POOv2.StatCA: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class POOv2.StatSales: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class POOv2.StatShow: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :POOv2.Show
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    getetat(): PrivateScope, Public, HideBySig
+    setetat(Int32*): PrivateScope, Public, HideBySig
+Class POOv2.StatValue: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class POOv2.StockEdit: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class POOv2.StockShow: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :POOv2.Show
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

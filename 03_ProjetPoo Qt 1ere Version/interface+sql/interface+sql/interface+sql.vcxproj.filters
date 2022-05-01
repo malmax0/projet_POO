@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="commandeaffi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="login.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stockaffi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clientaffi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="choixcscp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="personnel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CLSQL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="domainespp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="clientAjoutAdresse.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="clientModif.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="clientModifAdressSuppr.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="clientSuppr.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="commandeaffi.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="interface.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="personnelAffi.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="personnelAjout.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="personnelChangementSuperieur.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="personnelModif.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="personnelSuppr.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="statAffi.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="statCalcMois.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="statCalcTotal.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="statChoix.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="statSimu.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="login.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="stockAffi.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="stockAjout.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="stockModif.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="stockSuppr.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="clientAffi.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="commandeAjout.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="commandeAjoutArticle.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="commandeModif.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="commandeSuppr.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="clientAjout.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="domainesPP.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="login.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="choixcscp.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="personnel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="client.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="commande.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="stat.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="stock.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="domainespp.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="x64\Debug\uic\ui_clientAffi.h">
+      <Filter>Form Files</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\uic\ui_clientAjout.h">
+      <Filter>Form Files</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\uic\ui_clientAjoutAdresse.h">
+      <Filter>Form Files</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\uic\ui_clientModif.h">
+      <Filter>Form Files</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\uic\ui_clientModifAdresse.h">
+      <Filter>Form Files</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\uic\ui_clientModifAdressSuppr.h">
+      <Filter>Form Files</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\uic\ui_clientSuppr.h">
+      <Filter>Form Files</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\uic\ui_commandeaffi.h">
+      <Filter>Form Files</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\uic\ui_commandeAjout.h">
+      <Filter>Form Files</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\uic\ui_commandeAjoutArticle.h">
+      <Filter>Form Files</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\uic\ui_commandeModif.h">
+      <Filter>Form Files</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\uic\ui_commandeSuppr.h">
+      <Filter>Form Files</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\uic\ui_cscp.h">
+      <Filter>Form Files</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\uic\ui_login.h">
+      <Filter>Form Files</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\uic\ui_personnelAffi.h">
+      <Filter>Form Files</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\uic\ui_personnelAjout.h">
+      <Filter>Form Files</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\uic\ui_personnelChangementSuperieur.h">
+      <Filter>Form Files</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\uic\ui_personnelModif.h">
+      <Filter>Form Files</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\uic\ui_personnelSuppr.h">
+      <Filter>Form Files</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\uic\ui_stat.h">
+      <Filter>Form Files</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\uic\ui_statAffi.h">
+      <Filter>Form Files</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\uic\ui_statCalcMois.h">
+      <Filter>Form Files</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\uic\ui_statCalcTotal.h">
+      <Filter>Form Files</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\uic\ui_statChoix.h">
+      <Filter>Form Files</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\uic\ui_statSimu.h">
+      <Filter>Form Files</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\uic\ui_stockAffi.h">
+      <Filter>Form Files</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\uic\ui_stockAjout.h">
+      <Filter>Form Files</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\uic\ui_stockModif.h">
+      <Filter>Form Files</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\uic\ui_stockSuppr.h">
+      <Filter>Form Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CLSQL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

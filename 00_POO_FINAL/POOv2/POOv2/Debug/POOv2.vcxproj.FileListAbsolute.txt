@@ -1,0 +1,60 @@
+C:\Users\bapti\OneDrive\Desktop\projetv2\POOv2\POOv2\Debug\POOv2.vcxprojAssemblyReference.cache
+C:\Users\bapti\OneDrive\Desktop\projetv2\POOv2\POOv2\Debug\POOv2.ClientEdit.resources
+C:\Users\bapti\OneDrive\Desktop\projetv2\POOv2\POOv2\Debug\POOv2.ClientShow.resources
+C:\Users\bapti\OneDrive\Desktop\projetv2\POOv2\POOv2\Debug\POOv2.CommandeEdit.resources
+C:\Users\bapti\OneDrive\Desktop\projetv2\POOv2\POOv2\Debug\POOv2.CommandShow.resources
+C:\Users\bapti\OneDrive\Desktop\projetv2\POOv2\POOv2\Debug\POOv2.DomainePP.resources
+C:\Users\bapti\OneDrive\Desktop\projetv2\POOv2\POOv2\Debug\POOv2.login.resources
+C:\Users\bapti\OneDrive\Desktop\projetv2\POOv2\POOv2\Debug\POOv2.PersonnelEdit.resources
+C:\Users\bapti\OneDrive\Desktop\projetv2\POOv2\POOv2\Debug\POOv2.PersonnelShow.resources
+C:\Users\bapti\OneDrive\Desktop\projetv2\POOv2\POOv2\Debug\POOv2.StatCA.resources
+C:\Users\bapti\OneDrive\Desktop\projetv2\POOv2\POOv2\Debug\POOv2.StatSales.resources
+C:\Users\bapti\OneDrive\Desktop\projetv2\POOv2\POOv2\Debug\POOv2.StatShow.resources
+C:\Users\bapti\OneDrive\Desktop\projetv2\POOv2\POOv2\Debug\POOv2.StatValue.resources
+C:\Users\bapti\OneDrive\Desktop\projetv2\POOv2\POOv2\Debug\POOv2.StockShow.resources
+C:\Users\bapti\OneDrive\Desktop\projetv2\POOv2\POOv2\Debug\POOv2.vcxproj.GenerateResource.cache
+D:\cesi\2e année\2.Projet Poo\Projet\ProjetPOO\00_POO_FINAL\POOv2\POOv2\Debug\POOv2.vcxprojAssemblyReference.cache
+D:\cesi\2e année\2.Projet Poo\Projet\ProjetPOO\00_POO_FINAL\POOv2\POOv2\Debug\POOv2.ClientEdit.resources
+D:\cesi\2e année\2.Projet Poo\Projet\ProjetPOO\00_POO_FINAL\POOv2\POOv2\Debug\POOv2.ClientShow.resources
+D:\cesi\2e année\2.Projet Poo\Projet\ProjetPOO\00_POO_FINAL\POOv2\POOv2\Debug\POOv2.CommandeEdit.resources
+D:\cesi\2e année\2.Projet Poo\Projet\ProjetPOO\00_POO_FINAL\POOv2\POOv2\Debug\POOv2.CommandShow.resources
+D:\cesi\2e année\2.Projet Poo\Projet\ProjetPOO\00_POO_FINAL\POOv2\POOv2\Debug\POOv2.DomainePP.resources
+D:\cesi\2e année\2.Projet Poo\Projet\ProjetPOO\00_POO_FINAL\POOv2\POOv2\Debug\POOv2.login.resources
+D:\cesi\2e année\2.Projet Poo\Projet\ProjetPOO\00_POO_FINAL\POOv2\POOv2\Debug\POOv2.PersonnelEdit.resources
+D:\cesi\2e année\2.Projet Poo\Projet\ProjetPOO\00_POO_FINAL\POOv2\POOv2\Debug\POOv2.PersonnelShow.resources
+D:\cesi\2e année\2.Projet Poo\Projet\ProjetPOO\00_POO_FINAL\POOv2\POOv2\Debug\POOv2.StatCA.resources
+D:\cesi\2e année\2.Projet Poo\Projet\ProjetPOO\00_POO_FINAL\POOv2\POOv2\Debug\POOv2.StatSales.resources
+D:\cesi\2e année\2.Projet Poo\Projet\ProjetPOO\00_POO_FINAL\POOv2\POOv2\Debug\POOv2.StatShow.resources
+D:\cesi\2e année\2.Projet Poo\Projet\ProjetPOO\00_POO_FINAL\POOv2\POOv2\Debug\POOv2.StatValue.resources
+D:\cesi\2e année\2.Projet Poo\Projet\ProjetPOO\00_POO_FINAL\POOv2\POOv2\Debug\POOv2.StockShow.resources
+D:\cesi\2e année\2.Projet Poo\Projet\ProjetPOO\00_POO_FINAL\POOv2\POOv2\Debug\POOv2.vcxproj.GenerateResource.cache
+D:\user\temp\00_POO_FINAL\POOv2\POOv2\Debug\POOv2.vcxprojAssemblyReference.cache
+D:\user\temp\00_POO_FINAL\POOv2\POOv2\Debug\POOv2.ClientEdit.resources
+D:\user\temp\00_POO_FINAL\POOv2\POOv2\Debug\POOv2.ClientShow.resources
+D:\user\temp\00_POO_FINAL\POOv2\POOv2\Debug\POOv2.CommandeEdit.resources
+D:\user\temp\00_POO_FINAL\POOv2\POOv2\Debug\POOv2.CommandShow.resources
+D:\user\temp\00_POO_FINAL\POOv2\POOv2\Debug\POOv2.DomainePP.resources
+D:\user\temp\00_POO_FINAL\POOv2\POOv2\Debug\POOv2.login.resources
+D:\user\temp\00_POO_FINAL\POOv2\POOv2\Debug\POOv2.PersonnelEdit.resources
+D:\user\temp\00_POO_FINAL\POOv2\POOv2\Debug\POOv2.PersonnelShow.resources
+D:\user\temp\00_POO_FINAL\POOv2\POOv2\Debug\POOv2.StatCA.resources
+D:\user\temp\00_POO_FINAL\POOv2\POOv2\Debug\POOv2.StatSales.resources
+D:\user\temp\00_POO_FINAL\POOv2\POOv2\Debug\POOv2.StatShow.resources
+D:\user\temp\00_POO_FINAL\POOv2\POOv2\Debug\POOv2.StatValue.resources
+D:\user\temp\00_POO_FINAL\POOv2\POOv2\Debug\POOv2.StockShow.resources
+D:\user\temp\00_POO_FINAL\POOv2\POOv2\Debug\POOv2.vcxproj.GenerateResource.cache
+C:\Users\bapti\OneDrive\Documents\Cesi\CPIA2\Programmation orientée Objet\Projet\Github\ProjetPOO\00_POO_FINAL\POOv2\POOv2\Debug\POOv2.vcxprojAssemblyReference.cache
+C:\Users\bapti\OneDrive\Documents\Cesi\CPIA2\Programmation orientée Objet\Projet\Github\ProjetPOO\00_POO_FINAL\POOv2\POOv2\Debug\POOv2.ClientEdit.resources
+C:\Users\bapti\OneDrive\Documents\Cesi\CPIA2\Programmation orientée Objet\Projet\Github\ProjetPOO\00_POO_FINAL\POOv2\POOv2\Debug\POOv2.ClientShow.resources
+C:\Users\bapti\OneDrive\Documents\Cesi\CPIA2\Programmation orientée Objet\Projet\Github\ProjetPOO\00_POO_FINAL\POOv2\POOv2\Debug\POOv2.CommandeEdit.resources
+C:\Users\bapti\OneDrive\Documents\Cesi\CPIA2\Programmation orientée Objet\Projet\Github\ProjetPOO\00_POO_FINAL\POOv2\POOv2\Debug\POOv2.CommandShow.resources
+C:\Users\bapti\OneDrive\Documents\Cesi\CPIA2\Programmation orientée Objet\Projet\Github\ProjetPOO\00_POO_FINAL\POOv2\POOv2\Debug\POOv2.DomainePP.resources
+C:\Users\bapti\OneDrive\Documents\Cesi\CPIA2\Programmation orientée Objet\Projet\Github\ProjetPOO\00_POO_FINAL\POOv2\POOv2\Debug\POOv2.login.resources
+C:\Users\bapti\OneDrive\Documents\Cesi\CPIA2\Programmation orientée Objet\Projet\Github\ProjetPOO\00_POO_FINAL\POOv2\POOv2\Debug\POOv2.PersonnelEdit.resources
+C:\Users\bapti\OneDrive\Documents\Cesi\CPIA2\Programmation orientée Objet\Projet\Github\ProjetPOO\00_POO_FINAL\POOv2\POOv2\Debug\POOv2.PersonnelShow.resources
+C:\Users\bapti\OneDrive\Documents\Cesi\CPIA2\Programmation orientée Objet\Projet\Github\ProjetPOO\00_POO_FINAL\POOv2\POOv2\Debug\POOv2.StatCA.resources
+C:\Users\bapti\OneDrive\Documents\Cesi\CPIA2\Programmation orientée Objet\Projet\Github\ProjetPOO\00_POO_FINAL\POOv2\POOv2\Debug\POOv2.StatSales.resources
+C:\Users\bapti\OneDrive\Documents\Cesi\CPIA2\Programmation orientée Objet\Projet\Github\ProjetPOO\00_POO_FINAL\POOv2\POOv2\Debug\POOv2.StatShow.resources
+C:\Users\bapti\OneDrive\Documents\Cesi\CPIA2\Programmation orientée Objet\Projet\Github\ProjetPOO\00_POO_FINAL\POOv2\POOv2\Debug\POOv2.StatValue.resources
+C:\Users\bapti\OneDrive\Documents\Cesi\CPIA2\Programmation orientée Objet\Projet\Github\ProjetPOO\00_POO_FINAL\POOv2\POOv2\Debug\POOv2.StockShow.resources
+C:\Users\bapti\OneDrive\Documents\Cesi\CPIA2\Programmation orientée Objet\Projet\Github\ProjetPOO\00_POO_FINAL\POOv2\POOv2\Debug\POOv2.vcxproj.GenerateResource.cache

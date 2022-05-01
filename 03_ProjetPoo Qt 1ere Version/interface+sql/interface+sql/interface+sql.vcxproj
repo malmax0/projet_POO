@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{42424D27-241C-4571-9D30-42EA2BCD340F}</ProjectGuid>
+    <Keyword>QtVS_v303</Keyword>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0.18362.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0.18362.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files\MySQL\Connector C++ 8.0\include;D:\cesi\logiciel\Qt\5.15.2\msvc2019_64\include;D:\cesi\logiciel\wamp64\bin\mysql\mysql8.0.18\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>C:\Program Files\MySQL\Connector C++ 8.0\lib64\vs14;D:\cesi\logiciel\Qt\5.15.2\msvc2019_64\lib;D:\cesi\logiciel\wamp64\bin\mysql\mysql8.0.18\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>mysqlcppconn.lib;libmysql.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files\MySQL\Connector C++ 8.0\include;D:\cesi\logiciel\Qt\5.15.2\msvc2019_64\include;D:\cesi\logiciel\wamp64\bin\mysql\mysql8.0.18\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>C:\Program Files\MySQL\Connector C++ 8.0\lib64\vs14;D:\cesi\logiciel\Qt\5.15.2\msvc2019_64\lib;D:\cesi\logiciel\wamp64\bin\mysql\mysql8.0.18\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>mysqlcppconn.lib;libmysql.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
+    <QtInstall>5.15.2/msvc2019_64</QtInstall>
+    <QtModules>core;gui;widgets</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
+    <QtInstall>Qt5.15.2</QtInstall>
+    <QtModules>core;gui;widgets</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="choixcscp.cpp" />
+    <ClCompile Include="clientaffi.cpp" />
+    <ClCompile Include="CLSQL.cpp" />
+    <ClCompile Include="commandeaffi.cpp" />
+    <ClCompile Include="domainespp.cpp" />
+    <ClCompile Include="login.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="personnel.cpp" />
+    <ClCompile Include="stat.cpp" />
+    <ClCompile Include="stockaffi.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="clientAffi.ui" />
+    <QtUic Include="clientAjout.ui" />
+    <QtUic Include="clientAjoutAdresse.ui" />
+    <QtUic Include="clientModif.ui" />
+    <QtUic Include="clientModifAdressSuppr.ui" />
+    <QtUic Include="clientSuppr.ui" />
+    <QtUic Include="commandeaffi.ui" />
+    <QtUic Include="commandeAjout.ui" />
+    <QtUic Include="commandeAjoutArticle.ui" />
+    <QtUic Include="commandeModif.ui" />
+    <QtUic Include="commandeSuppr.ui" />
+    <QtUic Include="domainesPP.ui" />
+    <QtUic Include="interface.ui" />
+    <QtUic Include="login.ui" />
+    <QtUic Include="personnelAffi.ui" />
+    <QtUic Include="personnelAjout.ui" />
+    <QtUic Include="personnelChangementSuperieur.ui" />
+    <QtUic Include="personnelModif.ui" />
+    <QtUic Include="personnelSuppr.ui" />
+    <QtUic Include="statAffi.ui" />
+    <QtUic Include="statCalcMois.ui" />
+    <QtUic Include="statCalcTotal.ui" />
+    <QtUic Include="statChoix.ui" />
+    <QtUic Include="statSimu.ui" />
+    <QtUic Include="stockAffi.ui" />
+    <QtUic Include="stockAjout.ui" />
+    <QtUic Include="stockModif.ui" />
+    <QtUic Include="stockSuppr.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="commande.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="login.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="personnel.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="stat.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="stock.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="client.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="choixcscp.h" />
+    <ClInclude Include="CLSQL.h" />
+    <QtMoc Include="domainespp.h" />
+    <ClInclude Include="x64\Debug\uic\ui_clientAffi.h" />
+    <ClInclude Include="x64\Debug\uic\ui_clientAjout.h" />
+    <ClInclude Include="x64\Debug\uic\ui_clientAjoutAdresse.h" />
+    <ClInclude Include="x64\Debug\uic\ui_clientModif.h" />
+    <ClInclude Include="x64\Debug\uic\ui_clientModifAdresse.h" />
+    <ClInclude Include="x64\Debug\uic\ui_clientModifAdressSuppr.h" />
+    <ClInclude Include="x64\Debug\uic\ui_clientSuppr.h" />
+    <ClInclude Include="x64\Debug\uic\ui_commandeaffi.h" />
+    <ClInclude Include="x64\Debug\uic\ui_commandeAjout.h" />
+    <ClInclude Include="x64\Debug\uic\ui_commandeAjoutArticle.h" />
+    <ClInclude Include="x64\Debug\uic\ui_commandeModif.h" />
+    <ClInclude Include="x64\Debug\uic\ui_commandeSuppr.h" />
+    <ClInclude Include="x64\Debug\uic\ui_cscp.h" />
+    <ClInclude Include="x64\Debug\uic\ui_login.h" />
+    <ClInclude Include="x64\Debug\uic\ui_personnelAffi.h" />
+    <ClInclude Include="x64\Debug\uic\ui_personnelAjout.h" />
+    <ClInclude Include="x64\Debug\uic\ui_personnelChangementSuperieur.h" />
+    <ClInclude Include="x64\Debug\uic\ui_personnelModif.h" />
+    <ClInclude Include="x64\Debug\uic\ui_personnelSuppr.h" />
+    <ClInclude Include="x64\Debug\uic\ui_stat.h" />
+    <ClInclude Include="x64\Debug\uic\ui_statAffi.h" />
+    <ClInclude Include="x64\Debug\uic\ui_statCalcMois.h" />
+    <ClInclude Include="x64\Debug\uic\ui_statCalcTotal.h" />
+    <ClInclude Include="x64\Debug\uic\ui_statChoix.h" />
+    <ClInclude Include="x64\Debug\uic\ui_statSimu.h" />
+    <ClInclude Include="x64\Debug\uic\ui_stockAffi.h" />
+    <ClInclude Include="x64\Debug\uic\ui_stockAjout.h" />
+    <ClInclude Include="x64\Debug\uic\ui_stockModif.h" />
+    <ClInclude Include="x64\Debug\uic\ui_stockSuppr.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

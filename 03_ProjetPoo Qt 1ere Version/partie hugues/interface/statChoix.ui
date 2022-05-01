@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>statchoixClass</class>
+ <widget class="QWidget" name="statchoixClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>443</width>
+    <height>155</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>0</y>
+     <width>201</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Selectionner ce que vous voulez afficher</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>50</y>
+     <width>421</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Calculer le panier moyen (après remise)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Calculer le chiffre d’affaire sur un mois en particulier</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Identifier les produits sous le seuil de réapprovisionnement</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Calculer le montant total des achats pour un client</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Identifier les 10 articles les plus vendus </string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Identifier les 10 articles les moins vendus</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Calculer la valeur commerciale du stock</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Calculer la valeur d’achat du stock </string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Simuler des variations de valeurs commerciales pour en déduire la valeur du stock</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="BtStatVal">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>100</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Valider</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

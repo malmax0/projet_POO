@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="interface.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <QtMoc Include="interface.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClCompile Include="interface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="login.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="choixcscp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="commandeajout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="commandemodif.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="commandesuppr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="commandeaffi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stockajout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stockmodif.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stocksuppr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stockaffi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clientajout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clientajoutadress.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clientsuppr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="commandeajoutarticle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clientaffi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="personnelajout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="personnelaffi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="personnelchangementsuperieur.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="personnelmodif.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="personnelsuppr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clientmodif.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clientmodifadresssuppr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stataffi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="statcalcmois.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="statcalctotal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="statsimu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="statchoix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="interface.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="login.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="cscp.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="commandeAjout.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="commandeModif.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="commandeSuppr.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="commandeaffi.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="stockAjout.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="stockModif.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="stockSuppr.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="stockAffi.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="clientAjout.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="clientAjoutAdresse.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="clientSuppr.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="commandeAjoutArticle.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="clientAffi.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="personnelAjout.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="personnelAffi.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="personnelSuppr.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="personnelModif.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="personnelChangementSuperieur.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="clientModif.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="clientModifAdressSuppr.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="statAffi.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="statCalcMois.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="statSimu.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="statCalcTotal.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="statChoix.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="login.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="choixcscp.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="commandeajout.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="commandemodif.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="commandesuppr.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="commandeaffi.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="stockajout.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="stockmodif.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="stocksuppr.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="stockaffi.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="clientajoutadress.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="clientajout.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="clientsuppr.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="commandeajoutarticle.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="clientaffi.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="personnelsuppr.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="personnelmodif.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="personnelchangementsuperieur.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="personnelajout.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="personnelaffi.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="clientmodif.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="clientmodifadresssuppr.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="statsimu.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="stataffi.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="statcalcmois.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="statcalctotal.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="statchoix.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+</Project>

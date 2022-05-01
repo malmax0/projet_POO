@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="ClientEdit.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientShow.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandeEdit.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandShow.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="controleur.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="DomainePP.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="login.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="PersonnelEdit.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="PersonnelShow.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="SQL.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="StatCA.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="StatSales.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="StatShow.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="StatValue.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="StockEdit.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="StockShow.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="show.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="testeur.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ClientEdit.h" />
+    <ClInclude Include="ClientShow.h" />
+    <ClInclude Include="CommandeEdit.h" />
+    <ClInclude Include="CommandShow.h" />
+    <ClInclude Include="DomainePP.h" />
+    <ClInclude Include="login.h" />
+    <ClInclude Include="PersonnelEdit.h" />
+    <ClInclude Include="PersonnelShow.h" />
+    <ClInclude Include="StatCA.h" />
+    <ClInclude Include="StatSales.h" />
+    <ClInclude Include="StatShow.h" />
+    <ClInclude Include="StatValue.h" />
+    <ClInclude Include="StockEdit.h" />
+    <ClInclude Include="StockShow.h" />
+    <ClInclude Include="SQL.h">
+      <Filter>Head</Filter>
+    </ClInclude>
+    <ClInclude Include="testeur.h">
+      <Filter>Head</Filter>
+    </ClInclude>
+    <ClInclude Include="show.h">
+      <Filter>Head</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Head">
+      <UniqueIdentifier>{23372e2c-3eb5-4a65-a3d9-59d3237724ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{1db41c6b-ba4c-44c0-8d8f-25f34a7b684e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

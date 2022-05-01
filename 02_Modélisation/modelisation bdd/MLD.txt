@@ -1,0 +1,7 @@
+Personnel = (Id_Personnel INT IDENTITY, Nom_Personnel VARCHAR(250), Prenom_Personnel VARCHAR(250), Superieur INT, Adresse_Personnel VARCHAR(250), CP_Personnel INT, Ville_Personnel VARCHAR(250), Date_Embauche DATE, #Id_Personnel_1*);
+Client = (Id_Client INT IDENTITY, Nom_Client VARCHAR(250), Prenom_Client VARCHAR(250), Date_Naissance DATE, Date_firstachat DATE);
+Adresse = (Id_Adresse INT IDENTITY, Adresse VARCHAR(250), CP INT, ViIle VARCHAR(250), #Id_Client);
+Commande = (Id_Commande INT IDENTITY, Reference VARCHAR(250), Date_Livraison DATE, Date_Paiement DATE, Moyen_Paiement VARCHAR(250), Solde_du_règlement FLOAT, Id_Adresse_Facturation INT, Id_Adresse_Livraison INT, Date_emission DATE, Remise INT, #Id_Client);
+Catalogue = (Id_Catalogue INT IDENTITY, Nom_Article VARCHAR(250), HT FLOAT, Stock INT, TVA FLOAT, Test INT);
+Ville_France = (Id_Ville_France INT IDENTITY, Ville_de_France_Majuscule VARCHAR(250), Ville_de_France_Minuscule VARCHAR(250), Code_Postal INT);
+Article = (Id_Article INT IDENTITY, Quantite INT, #Id_Catalogue, #Id_Commande);

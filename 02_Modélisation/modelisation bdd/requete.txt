@@ -1,0 +1,355 @@
+#===============================================================Client====================================================================
+--Afficher
+SELECT * FROM Client WHERE Id_CLient = qqc;
+
+--Ajouter
+INSERT INTO Client (Nom_Client, Prenom_Client, Date_Naissance) VALUES ('qqc','qqc,'qcc');
+/*Si on veut ajouter une adresse pour le client*/
+SELECT COALESCE(MAX(Ville_de_France_Majuscule), 'false') AS WhenReturnSetIsEmpty FROM Ville_France WHERE Ville_de_France_Majuscule='qqc' OR Ville_de_France_Minuscule = 'qqc';
+/*C++
+ 	res = mysql_store_result(conn);
+        while (row = mysql_fetch_row(res))
+        {
+            printf("%s\n", row[0]);
+            if (string(row[0]) == "false")
+            {
+                cout << "error";
+            }
+            else
+            {
+                cout << "fonctionne";
+            }
+        }
+*/
+INSERT INTO Adresse (Adresse,CP, Ville,ID_Client) VALUES ('qqc','qqc','qqc','qqc');
+
+--Modifier
+UPDATE Client SET Nom_Client = 'qqc', Prenom_Client = 'qqc', Date_Naissance = 'qqc' WHERE Id_CLient = 'qqc';
+/*Si on veut modifier une adresse pour le client*/
+SELECT COALESCE(MAX(Ville_de_France_Majuscule), 'false') AS WhenReturnSetIsEmpty FROM Ville_France WHERE Ville_de_France_Majuscule='qqc' OR Ville_de_France_Minuscule = 'qqc';
+/*C++
+ 	res = mysql_store_result(conn);
+        while (row = mysql_fetch_row(res))
+        {
+            printf("%s\n", row[0]);
+            if (string(row[0]) == "false")
+            {
+                cout << "error";
+            }
+            else
+            {
+                cout << "fonctionne";
+            }
+        }
+*/
+UPDATE Adresse (Adresse_Livraison,CP_Livraison, Ville_Livraison, Adresse_Facturation, CP_Facturation, Ville_Facturation) VALUES ('qqc','qqc','qqc','qqc','qqc','qqc');
+/*Si on veut ajouter une adresse pour le client*/
+SELECT COALESCE(MAX(Ville_de_France_Majuscule), 'false') AS WhenReturnSetIsEmpty FROM Ville_France WHERE Ville_de_France_Majuscule='qqc' OR Ville_de_France_Minuscule = 'qqc';
+/*C++
+ 	res = mysql_store_result(conn);
+        while (row = mysql_fetch_row(res))
+        {
+            printf("%s\n", row[0]);
+            if (string(row[0]) == "false")
+            {
+                cout << "error";
+            }
+            else
+            {
+                cout << "fonctionne";
+            }
+        }
+*/
+INSERT INTO Adresse (Adresse_Livraison,CP_Livraison, Ville_Livraison, Adresse_Facturation, CP_Facturation, Ville_Facturation) VALUES ('qqc','qqc','qqc','qqc','qqc','qqc');
+
+
+#===============================================================Personnel====================================================================
+--Afficher
+SELECT * FROM Personnel WHERE Id_Personnel = 'qqc';
+--Ajouter
+INSERT INTO Personnel (Nom_Personnel, Prenom_Personnel, Superieur, Date_Embauche,Adresse_Personnel, CP_Personnel, Ville_Personnel) VALUES ('qqc','qqc','qcc','qcc','qqc','qqc','qqc');
+
+--Modifier
+UPDATE Client SET Nom_Personnel = 'qqc', Prenom_Personnel = 'qqc', Superieur = 'qqc', Date_Embauche = 'qqc' WHERE Id_CLient = 'qqc', Adresse_Personnel = 'qqc', CP_Personnel = 'qqc', Ville_Personnel = 'qqc';
+
+
+#===============================================================COMMANDE====================================================================
+--Afficher
+SELECT * FROM Commande WHERE Id_Commande = qqc;
+
+--Ajouter 
+SELECT Adresse_Livraison FROM Adresse WHERE Id_CLient = qqc;
+/*en c++
+	res = mysql_store_result(conn);
+	while (row = mysql_fetch_row(res))
+        {
+            tab_livraison[i] = row;
+	    i++;
+        }
+*/
+SELECT Adresse_Facturation FROM Adresse WHERE Id_CLient = qqc;
+/*en c++
+	res = mysql_store_result(conn);
+	while (row = mysql_fetch_row(res))
+        {
+            tab_facturation[j] = row;
+	    j++;
+        }
+*/
+################Transaction
+INSERT INTO Commande (Id_Client, Date_Paiement, Moyen_Paiement, Solde_du_règlement, ID_Adresse_Facturation, Id_Adresse_Livraison) VALUES ('qqc','qqc,'qcc','qqc,'qcc','qcc');
+
+Il peut il avoir N artcile
+INSERT INTO 
+	Article (Id_Commande,Id_Article,Quantite) 
+VALUES 
+	(Commande.ID_commande,'qqc','qqc')
+WHERE
+	Commande.ID_commande=(SELECT MAX(ID_commande) FROM Commande);
+	;
+################END
+
+
+--Modifier
+SELECT Solde_du_règlement FROM Commande WHERE Id_Commande = qqc;
+/*en C++
+	res = mysql_store_result(conn);
+	res += qqc;
+*/
+UPDATE Commande SET Solde_du_règlement = 'res' WHERE Id_Commande = qqc;
+
+--Suprimer
+DELETE FROM Commande WHERE Id_Commande = qqc;
+
+
+#===============================================================CATALOGUE====================================================================
+--Afficher
+SELECT * FROM Catalogue WHERE Id_Catalogue = qqc;
+
+--Ajouter
+INSERT INTO Catalogue (Nom_Article, Prix_HT, Stock) VALUES ('qqc','qqc,'qcc');
+
+--Modifier
+UPDATE Catalogue SET SET Nom_Article = 'qqc', Prix_HT = 'qqc', Stock = 'qqc', TVA = 'qqc' WHERE Id_Catalogue = qqc;
+
+--Suprimer
+DELETE FROM Catalogue WHERE Id_Catalogue = qqc;
+
+#===============================================================Statistique====================================================================
+#===========1======================
+
+SELECT
+	SUM(Prix_Panier)/COUNT(Id_commande)
+FROM
+	(SELECT 
+		SUM(Prix_Article)AS Prix_Panier
+	FROM
+		(SELECT
+			((Catalogue.HT)*(1+(Catalogue.TVA)/100)*(Article.Quantite)*(1-(Commande.Remise)/cast(100 as float)))
+		AS 
+			Prix_Article, Article.Id_Commande AS Id
+		FROM 
+			Catalogue, Article, Commande
+		WHERE 
+			Article.Id_Commande = Commande.Id_Commande 
+		AND 
+			Article.Id_Catalogue = Catalogue.Id_Catalogue)AS tmp, commande
+	WHERE
+		Id = Commande.Id_Commande
+	GROUP BY 
+		Id)AS temp, commande
+#===========2======================
+SELECT
+	SUM(Prix_Panier)
+FROM
+	(SELECT 
+		SUM(Prix_Article)AS Prix_Panier
+	FROM
+		(SELECT
+			((Catalogue.HT)*(1+(Catalogue.TVA)/100)*(Article.Quantite)*(1-(Commande.Remise)/cast(100 as float)))
+		AS 
+			Prix_Article, Article.Id_Commande AS Id
+		FROM 
+			Catalogue, Article, Commande
+		WHERE 
+			Article.Id_Commande = Commande.Id_Commande 
+		AND 
+			Article.Id_Catalogue = Catalogue.Id_Catalogue)AS tmp, commande
+	WHERE
+		Id = Commande.Id_Commande
+	GROUP BY 
+		Id)AS temp, commande
+WHERE
+	Date_Paiement >= 'Date inférieur'
+AND
+	Date_Paiement <	'Date Supérieur';
+#===========3====================
+SELECT
+	Nom_Article, Id_Catalogue
+FROM 
+	Catalogue
+WHERE
+	Stock <= ((15*(SELECT
+			SUM(Quantite)
+		    FROM
+				Article,commande,catalogue
+		    WHERE
+				Commande.Id_Commande = Article.Id_Commande 
+			AND
+				Article.Id_Catalogue = Catalogue.Id_Catalogue
+		    AND
+				Commande.Date_Paiement > DATEADD(year,-1,(CONVERT(date, GETDATE()))))
+	/365.242 + (SELECT MAX(result)
+			FROM
+				(SELECT (SUM(Quantite))AS result
+			FROM
+				Article,commande,catalogue
+		    WHERE
+				Commande.Id_Commande = Article.Id_Commande 
+			AND 
+                Article.Id_Catalogue = Catalogue.Id_Catalogue
+		    AND
+	                Commande.Date_Paiement > DATEADD(year,-1,(CONVERT(date, GETDATE())))
+		    GROUP BY
+			MONTH(Commande.Date_Paiement))as smt)
+		    
+	-((SELECT
+			SUM(Quantite)
+		    FROM
+				Article,commande,catalogue
+		    WHERE
+				Commande.Id_Commande = Article.Id_Commande AND Article.Id_Catalogue = Catalogue.Id_Catalogue
+		    AND
+	                Commande.Date_Paiement > DATEADD(year,-1,(CONVERT(date, GETDATE())))))
+	+15))
+	
+#===========4====================
+SELECT 
+	SUM(Prix_Article) 
+	AS Prix_panier
+FROM 
+	(SELECT
+		((Catalogue.HT)*(1+(Catalogue.TVA)/CAST(100 as float))*(Article.Quantite)*(1-(Commande.Remise)/CAST(100 as float))) 
+		AS Prix_Article
+	FROM 
+		Catalogue, Article, Commande
+	WHERE 
+		Article.Id_Commande = Commande.Id_Commande 
+	AND 
+		Article.Id_Catalogue = Catalogue.Id_Catalogue
+	AND 
+	Id_Client = //Variable//)AS tmp
+#===========5====================
+SELECT TOP 10
+	SUM(article.Quantite)/2 AS resultat ,Catalogue.Nom_Article
+FROM
+	Article, commande, catalogue
+WHERE
+	Article.Id_Catalogue = catalogue.Id_Catalogue
+Group BY
+	Catalogue.Nom_Article
+ORDER BY
+	 resultat desc
+#===========6====================
+SELECT TOP 10
+	SUM(article.Quantite)/2 AS resultat ,Catalogue.Nom_Article
+FROM
+	Article, commande, catalogue
+WHERE
+	Article.Id_Catalogue = catalogue.Id_Catalogue
+Group BY
+	Catalogue.Nom_Article
+ORDER BY
+	 resultat asc
+#===========7====================
+SELECT
+	SUM(Resultat)
+FROM
+	(SELECT
+		(Catalogue.Stock)*(Catalogue.HT)*(1+(Catalogue.TVA)/CAST(100 AS FLOAT)) AS Resultat
+	FROM
+		Catalogue)AS tmp;
+#===========8====================
+SELECT
+	SUM(Resultat)
+FROM
+	(SELECT
+		(Catalogue.Stock)*(Catalogue.HT) AS Resultat
+	FROM
+		Catalogue)AS tmp;	
+#===========9====================
+SELECT
+	SUM(Resultat)
+FROM
+	(SELECT
+		((Catalogue.Stock)*(Catalogue.HT)*(1+('TVA')/CAST(100 AS FLOAT))*(1-('Remise')/CAST(100 AS FLOAT))*(1-('Demarche')/CAST(100 AS FLOAT))*(1+('Marge')/100)) AS Resultat
+	FROM
+		Catalogue) as tmp;
+#===================TRIGGER===========
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TRIGGER date_firstachat
+   ON  commande
+   AFTER INSERT
+AS 
+BEGIN
+	SET NOCOUNT ON;
+	IF ((SELECT client.Date_firstachat FROM client WHERE client.Id_Client = (SELECT id_client FROM inserted)) IS NULL)
+	UPDATE 
+		client 
+	SET 
+		client.Date_firstachat = CONVERT (date, GETDATE())
+END
+GO
+-----------------------------------------------------------
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TRIGGER 
+	Reference 
+ON
+	Commande
+AFTER INSERT
+AS
+BEGIN
+UPDATE Commande
+SET Reference =(SELECT 
+						* 
+				FROM 
+					(SELECT		
+							CONCAT(SUBSTRING(Nom_Client,1,2),
+							SUBSTRING(Prenom_Client,1,2),
+							YEAR(CONVERT (date, GETDATE())),
+							(SELECT id_commande FROM inserted)) AS resultat 
+					FROM 
+						client
+					WHERE 
+						client.Id_Client= (SELECT id_client FROM inserted)) 
+					AS 
+						tmp) 
+
+END
+GO
+---------------------------------------------------------------
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TRIGGER Réglage_Stock
+   ON  article
+   AFTER INSERT
+AS 
+BEGIN
+	SET NOCOUNT ON;
+	UPDATE catalogue SET
+	catalogue.Stock = (catalogue.Stock-(SELECT quantite FROM inserted)) 
+	WHERE catalogue.Id_Catalogue = (SELECT Id_Catalogue FROM inserted)   
+END
+GO

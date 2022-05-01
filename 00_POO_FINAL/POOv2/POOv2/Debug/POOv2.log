@@ -1,0 +1,8 @@
+﻿  ClientShow.cpp
+  SQL.cpp
+C:\Users\bapti\OneDrive\Documents\Cesi\CPIA2\Programmation orientée Objet\Projet\Github\ProjetPOO\00_POO_FINAL\POOv2\POOv2\SQL.cpp(1101,7): warning C4101: 'Id_rows_Commande' : variable locale non référencée
+  controleur.cpp
+  login.cpp
+  Génération de code en cours...
+  ClientEdit.obj : module MSIL détecté ; liens incrémentiels désactivés pour MSIL ; édition de liens complète en cours
+  POOv2.vcxproj -> C:\Users\bapti\OneDrive\Documents\Cesi\CPIA2\Programmation orientée Objet\Projet\Github\ProjetPOO\00_POO_FINAL\POOv2\Debug\POOv2.exe
